@@ -70,7 +70,21 @@
     <!-- Navbar Start -->
     <div class="container-fluid mb-5">
         <div class="row border-top px-xl-5">
-            <div class="col-lg-12">
+            <div class="col-lg-3 d-none d-lg-block">
+                <a class="btn shadow-none d-flex align-items-center justify-content-between bg-dark text-white w-100" data-bs-toggle="collapse" href="#navbar-vertical" role="button" aria-expanded="false" aria-controls="navbar-vertical" style="height: 65px; margin-top: -1px; padding: 0 30px;">
+                    <h6 class="m-0">Categories</h6>
+                    <i class="bi bi-chevron-down text-white"></i>
+                </a>
+                <nav class="collapse navbar navbar-vertical navbar-white align-items-start p-0 border border-top-0 border-bottom-0" id="navbar-vertical">
+                    <div class="navbar-nav w-100 overflow-hidden" style="height: 410px">
+                        <a href="" class="nav-item nav-link">Kaos</a>
+                        <a href="" class="nav-item nav-link">Jaket</a>
+                        <a href="" class="nav-item nav-link">Sweater</a>
+                        <a href="" class="nav-item nav-link">Kemeja</a>
+                    </div>
+                </nav>
+            </div>
+            <div class="col-lg-9">
                 <nav class="navbar navbar-expand-lg bg-white navbar-white">
                     <a href="" class="text-decoration-none d-block d-lg-none">
                         <h1 class="m-0 display-5 font-weight-semi-bold text-dark"><strong>MKB</strong></h1>
@@ -90,242 +104,299 @@
                             <a href="" class="nav-item nav-link">Register</a>
                         </div>
                     </div>
-                </nav>
+                </nav>            
             </div>
         </div>
     </div>
     <!-- Navbar End -->
 
-    <!-- Detail Toko Mulai -->
-    <div class="container-fluid py-5">
+ 
+    <!-- Shop Start -->
+    <div class="container-fluid pt-5">
         <div class="row px-xl-5">
-            <div class="col-lg-5 pb-5">
-                <div id="product-carousel" class="carousel slide" data-bs-ride="carousel">
-                    <div class="carousel-inner border">
-                        <div class="carousel-item active">
-                            <img class="d-block w-100 h-100" src="images/1.jpg" alt="Gambar">
+            <!-- Shop Sidebar Start -->
+            <div class="col-lg-3 col-md-12">
+                <!-- Price Start -->
+                <div class="border-bottom mb-4 pb-4">
+                    <h5 class="font-weight-semi-bold mb-4">Filter by Price</h5>
+                    <form>
+                        <div class="form-check d-flex align-items-center justify-content-between mb-3">
+                            <input type="checkbox" class="form-check-input" checked id="price-all">
+                            <label class="form-check-label" for="price-all">All Price</label>
+                            <span class="badge border font-weight-normal text-dark">1000</span>
                         </div>
-                        <div class="carousel-item">
-                            <img class="d-block w-100 h-100" src="images/2.jpg" alt="Gambar">
+                        <div class="form-check d-flex align-items-center justify-content-between mb-3">
+                            <input type="checkbox" class="form-check-input" id="price-1">
+                            <label class="form-check-label" for="price-1">Rp.0 - Rp.20.000</label>
+                            <span class="badge border font-weight-normal text-dark">150</span>
                         </div>
-                        <div class="carousel-item">
-                            <img class="d-block w-100 h-100" src="images/3.jpg" alt="Gambar">
+                        <div class="form-check d-flex align-items-center justify-content-between mb-3">
+                            <input type="checkbox" class="form-check-input" id="price-2">
+                            <label class="form-check-label" for="price-2">Rp.25.000 - Rp.50.000</label>
+                            <span class="badge border font-weight-normal text-dark">295</span>
                         </div>
-                    </div>
-                    <button class="carousel-control-prev" type="button" data-bs-target="#product-carousel" data-bs-slide="prev">
-                        <span class="carousel-control-prev-icon"></span>
-                    </button>
-                    <button class="carousel-control-next" type="button" data-bs-target="#product-carousel" data-bs-slide="next">
-                        <span class="carousel-control-next-icon"></span>
-                    </button>
+                        <div class="form-check d-flex align-items-center justify-content-between mb-3">
+                            <input type="checkbox" class="form-check-input" id="price-3">
+                            <label class="form-check-label" for="price-3">Rp.55.000 - Rp.70.000</label>
+                            <span class="badge border font-weight-normal text-dark">246</span>
+                        </div>
+                        <div class="form-check d-flex align-items-center justify-content-between mb-3">
+                            <input type="checkbox" class="form-check-input" id="price-4">
+                            <label class="form-check-label" for="price-4">Rp.75.000 - Rp.100.000</label>
+                            <span class="badge border font-weight-normal text-dark">145</span>
+                        </div>
+                        <div class="form-check d-flex align-items-center justify-content-between">
+                            <input type="checkbox" class="form-check-input" id="price-5">
+                            <label class="form-check-label" for="price-5">Rp.105.000- Rp.1.000.000</label>
+                            <span class="badge border font-weight-normal text-dark">168</span>
+                        </div>
+                    </form>
                 </div>
-            </div>
+                <!-- Price End -->
+                
+                <!-- Kategori Start -->
+                <div class="border-bottom mb-4 pb-4">
+                    <h5 class="font-weight-semi-bold mb-4">Filter by category</h5>
+                    <form>
+                        <div class="form-check d-flex align-items-center justify-content-between mb-3">
+                            <input type="checkbox" class="form-check-input" checked id="category-all">
+                            <label class="form-check-label" for="category-all">All category</label>
+                            <span class="badge border font-weight-normal text-dark">1000</span>
+                        </div>
+                        <div class="form-check d-flex align-items-center justify-content-between mb-3">
+                            <input type="checkbox" class="form-check-input" id="category-1>
+                            <label class="form-check-label" for="category-1">Kaos</label>
+                            <span class="badge border font-weight-normal text-dark">150</span>
+                        </div>
+                        <div class="form-check d-flex align-items-center justify-content-between mb-3">
+                            <input type="checkbox" class="form-check-input" id="category-2">
+                            <label class="form-check-label" for="category-2">Jaket</label>
+                            <span class="badge border font-weight-normal text-dark">295</span>
+                        </div>
+                        <div class="form-check d-flex align-items-center justify-content-between mb-3">
+                            <input type="checkbox" class="form-check-input" id="category-3">
+                            <label class="form-check-label" for="category-3">Sweater</label>
+                            <span class="badge border font-weight-normal text-dark">246</span>
+                        </div>
+                        <div class="form-check d-flex align-items-center justify-content-between mb-3">
+                            <input type="checkbox" class="form-check-input" id="category-4">
+                            <label class="form-check-label" for="category-4">Kemeja</label>
+                            <span class="badge border font-weight-normal text-dark">145</span>
+                        </div>
+                    </form>
+                </div>
+                <!-- Color End -->
 
-            <div class="col-lg-7 pb-5">
-                <h3 class="font-weight-semi-bold">Kaos</h3>
-                <div class="d-flex mb-3">
-                    <div class="text-primary mr-2">
-                        <i class="bi bi-star-fill"></i>
-                        <i class="bi bi-star-fill"></i>
-                        <i class="bi bi-star-fill"></i>
-                        <i class="bi bi-star-half"></i>
-                        <i class="bi bi-star"></i>
-                    </div>
-                    <small class="pt-1">(50 Ulasan)</small>
-                </div>
-                <h3 class="font-weight-semi-bold mb-4">Rp 2.250.000,00</h3>
-                <p class="mb-4">Volup erat ipsum diam elitr rebum et dolor. Est nonumy elitr erat diam stet sit clita ea. Sanc invidunt ipsum et, labore clita lorem magna lorem ut. Erat lorem duo dolor no sea nonumy. Accus labore stet, est lorem sit diam sea et justo, amet at lorem et eirmod ipsum diam et rebum kasd rebum.</p>
-                <div class="d-flex mb-3">
-                    <p class="text-dark font-weight-medium mb-0 mr-3">Ukuran:</p>
+                <!-- Size Start -->
+                <div class="mb-5">
+                    <h5 class="font-weight-semi-bold mb-4">Filter by size</h5>
                     <form>
-                        <div class="form-check form-check-inline">
-                            <input type="radio" class="form-check-input" id="size-1" name="size">
+                        <div class="form-check d-flex align-items-center justify-content-between mb-3">
+                            <input type="checkbox" class="form-check-input" checked id="size-all">
+                            <label class="form-check-label" for="size-all">All Size</label>
+                            <span class="badge border font-weight-normal text-dark">1000</span>
+                        </div>
+                        <div class="form-check d-flex align-items-center justify-content-between mb-3">
+                            <input type="checkbox" class="form-check-input" id="size-1">
                             <label class="form-check-label" for="size-1">XS</label>
+                            <span class="badge border font-weight-normal text-dark">150</span>
                         </div>
-                        <div class="form-check form-check-inline">
-                            <input type="radio" class="form-check-input" id="size-2" name="size">
+                        <div class="form-check d-flex align-items-center justify-content-between mb-3">
+                            <input type="checkbox" class="form-check-input" id="size-2">
                             <label class="form-check-label" for="size-2">S</label>
+                            <span class="badge border font-weight-normal text-dark">295</span>
                         </div>
-                        <div class="form-check form-check-inline">
-                            <input type="radio" class="form-check-input" id="size-3" name="size">
+                        <div class="form-check d-flex align-items-center justify-content-between mb-3">
+                            <input type="checkbox" class="form-check-input" id="size-3">
                             <label class="form-check-label" for="size-3">M</label>
+                            <span class="badge border font-weight-normal text-dark">246</span>
                         </div>
-                        <div class="form-check form-check-inline">
-                            <input type="radio" class="form-check-input" id="size-4" name="size">
+                        <div class="form-check d-flex align-items-center justify-content-between mb-3">
+                            <input type="checkbox" class="form-check-input" id="size-4">
                             <label class="form-check-label" for="size-4">L</label>
+                            <span class="badge border font-weight-normal text-dark">145</span>
                         </div>
-                        <div class="form-check form-check-inline">
-                            <input type="radio" class="form-check-input" id="size-5" name="size">
+                        <div class="form-check d-flex align-items-center justify-content-between">
+                            <input type="checkbox" class="form-check-input" id="size-5">
                             <label class="form-check-label" for="size-5">XL</label>
+                            <span class="badge border font-weight-normal text-dark">168</span>
                         </div>
                     </form>
                 </div>
-                <div class="d-flex mb-4">
-                    <p class="text-dark font-weight-medium mb-0 mr-3">Warna:</p>
-                    <form>
-                        <div class="form-check form-check-inline">
-                            <input type="radio" class="form-check-input" id="color-1" name="color">
-                            <label class="form-check-label" for="color-1">Hitam</label>
-                        </div>
-                        <div class="form-check form-check-inline">
-                            <input type="radio" class="form-check-input" id="color-2" name="color">
-                            <label class="form-check-label" for="color-2">Putih</label>
-                        </div>
-                        <div class="form-check form-check-inline">
-                            <input type="radio" class="form-check-input" id="color-3" name="color">
-                            <label class="form-check-label" for="color-3">Merah</label>
-                        </div>
-                        <div class="form-check form-check-inline">
-                            <input type="radio" class="form-check-input" id="color-4" name="color">
-                            <label class="form-check-label" for="color-4">Biru</label>
-                        </div>
-                        <div class="form-check form-check-inline">
-                            <input type="radio" class="form-check-input" id="color-5" name="color">
-                            <label class="form-check-label" for="color-5">Hijau</label>
-                        </div>
-                    </form>
-                </div>
-                <div class="d-flex align-items-center mb-4 pt-2">
-                    <div class="input-group quantity mx-3" style="width: 130px;">
-                        <button class="btn btn-dark btn-minus">
-                            <i class="bi bi-dash"></i>
-                        </button>
-                        <input type="text" class="form-control bg-secondary text-center" value="1" id="quantity-input">
-                        <button class="btn btn-dark btn-plus">
-                            <i class="bi bi-plus"></i>
-                        </button>
-                    </div>
-                    <button class="btn btn-dark px-3"><i class="bi bi-cart3 mr-1"></i> Tambahkan ke Keranjang</button>
-                </div>
-                <div class="d-flex pt-2">
-                    <p class="text-dark font-weight-medium mb-0 mr-2">Bagikan di:</p>
-                    <div class="d-inline-flex">
-                        <a class="text-dark px-2" href="">
-                            <i class="bi bi-facebook"></i>
-                        </a>
-                        <a class="text-dark px-2" href="">
-                            <i class="bi bi-twitter"></i>
-                        </a>
-                        <a class="text-dark px-2" href="">
-                            <i class="bi bi-linkedin"></i>
-                        </a>
-                        <a class="text-dark px-2" href="">
-                            <i class="bi bi-pinterest"></i>
-                        </a>
-                    </div>
-                </div>
+                <!-- Size End -->
             </div>
-        </div>
-        <div class="row px-xl-5">
-            <div class="col">
-                <div class="nav nav-tabs justify-content-center border-secondary mb-4">
-                    <button class="nav-link active text-dark" data-bs-toggle="tab" data-bs-target="#tab-pane-1">Deskripsi</button>
-                    <button class="nav-link text-dark" data-bs-toggle="tab" data-bs-target="#tab-pane-2">Informasi</button>
-                    <button class="nav-link text-dark" data-bs-toggle="tab" data-bs-target="#tab-pane-3">Ulasan (0)</button>
-                </div>                
-                <div class="tab-content">
-                    <div class="tab-pane fade show active" id="tab-pane-1">
-                        <h4 class="mb-3">Deskripsi Produk</h4>
-                        <p>Eos no lorem eirmod diam diam, eos elitr et gubergren diam sea. Consetetur vero aliquyam invidunt duo dolores et duo sit. Vero diam ea vero et dolore rebum, dolor rebum eirmod consetetur invidunt sed sed et, lorem duo et eos elitr, sadipscing kasd ipsum rebum diam. Dolore diam stet rebum sed tempor kasd eirmod. Takimata kasd ipsum accusam sadipscing, eos dolores sit no ut diam consetetur duo justo est, sit sanctus diam tempor aliquyam eirmod nonumy rebum dolor accusam, ipsum kasd eos consetetur at sit rebum, diam kasd invidunt tempor lorem, ipsum lorem elitr sanctus eirmod takimata dolor ea invidunt. Magna sit dolore sed et lorem est magna rebum rebum dolor est. Takimata stet invidunt et sanctus et dolor et ea et. Dolore dolor amet elitr clita rebum sadipscing ut consetetur et. Magna sit dolore sed et lorem est magna rebum rebum dolor est. Takimata stet invidunt et sanctus et dolor et ea et. Dolore dolor amet elitr clita rebum sadipscing ut consetetur et.</p>
-                    </div>
-                    <div class="tab-pane fade" id="tab-pane-2">
-                        <h4 class="mb-3">Informasi Tambahan</h4>
-                        <p>Eos no lorem eirmod diam diam, eos elitr et gubergren diam sea. Consetetur vero aliquyam invidunt duo dolores et duo sit. Vero diam ea vero et dolore rebum, dolor rebum eirmod consetetur invidunt sed sed et, lorem duo et eos elitr, sadipscing kasd ipsum rebum diam. Dolore diam stet rebum sed tempor kasd eirmod. Takimata kasd ipsum accusam sadipscing, eos dolores sit no ut diam consetetur duo justo est, sit sanctus diam tempor aliquyam eirmod nonumy rebum dolor accusam, ipsum kasd eos consetetur at sit rebum, diam kasd invidunt tempor lorem, ipsum lorem elitr sanctus eirmod takimata dolor ea invidunt.</p>
-                        <div class="row">
-                            <div class="col-md-6">
-                                <ul class="list-group list-group-flush">
-                                    <li class="list-group-item px-0">
-                                        Sit erat duo lorem duo ea consetetur, et eirmod takimata.
-                                    </li>
-                                    <li class="list-group-item px-0">
-                                        Amet kasd gubergren sit sanctus et lorem eos sadipscing at.
-                                    </li>
-                                    <li class="list-group-item px-0">
-                                        Duo amet accusam eirmod nonumy stet et et stet eirmod.
-                                    </li>
-                                    <li class="list-group-item px-0">
-                                        Takimata ea clita labore amet ipsum erat justo voluptua. Nonumy.
-                                    </li>
-                                </ul> 
-                            </div>
-                            <div class="col-md-6">
-                                <ul class="list-group list-group-flush">
-                                    <li class="list-group-item px-0">
-                                        Sit erat duo lorem duo ea consetetur, et eirmod takimata.
-                                    </li>
-                                    <li class="list-group-item px-0">
-                                        Amet kasd gubergren sit sanctus et lorem eos sadipscing at.
-                                    </li>
-                                    <li class="list-group-item px-0">
-                                        Duo amet accusam eirmod nonumy stet et et stet eirmod.
-                                    </li>
-                                    <li class="list-group-item px-0">
-                                        Takimata ea clita labore amet ipsum erat justo voluptua. Nonumy.
-                                    </li>
-                                </ul> 
+            <!-- Shop Sidebar End -->
+
+            <!-- Shop Product Start -->
+            <div class="col-lg-9 col-md-12">
+                <div class="row pb-3">
+                    <div class="col-12 pb-1">
+                        <div class="d-flex align-items-center justify-content-between mb-4">
+                            <form action="">
+                                <div class="input-group">
+                                    <input type="text" class="form-control" placeholder="Search by name">
+                                    <button class="btn btn-outline-dark" type="button">
+                                        <i class="bi bi-search"></i>
+                                    </button>
+                                </div>
+                            </form>
+                            <div class="dropdown ml-4">
+                                <button class="btn border dropdown-toggle" type="button" id="triggerId" data-bs-toggle="dropdown" aria-expanded="false">
+                                    Sort by
+                                </button>
+                                <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="triggerId">
+                                    <li><a class="dropdown-item" href="#">Latest</a></li>
+                                    <li><a class="dropdown-item" href="#">Popularity</a></li>
+                                    <li><a class="dropdown-item" href="#">Best Rating</a></li>
+                                </ul>
                             </div>
                         </div>
                     </div>
-                    <div class="tab-pane fade" id="tab-pane-3">
-                        <div class="row">
-                            <div class="col-md-6">
-                                <h4 class="mb-4">1 ulasan untuk "Kemeja Gaya Berwarna-warni"</h4>
-                                <div class="media mb-4">
-                                    <img src="img/user.jpg" alt="Gambar" class="img-fluid mr-3 mt-1" style="width: 45px;">
-                                    <div class="media-body">
-                                        <h6>John Doe<small> - <i>01 Jan 2045</i></small></h6>
-                                        <div class="text-primary mb-2">
-                                            <i class="bi bi-star-fill"></i>
-                                            <i class="bi bi-star-fill"></i>
-                                            <i class="bi bi-star-fill"></i>
-                                            <i class="bi bi-star-half"></i>
-                                            <i class="bi bi-star"></i>
-                                        </div>
-                                        <p>Diam amet duo labore stet elitr ea clita ipsum, tempor labore accusam ipsum et no at. Kasd diam tempor rebum magna dolores sed sed eirmod ipsum.</p>
-                                    </div>
+                    
+                    <!-- Example product item start -->
+                    <div class="col-lg-4 col-md-6 col-sm-12 pb-1">
+                        <div class="card product-item border-0 mb-4">
+                            <div class="card-header product-img position-relative overflow-hidden bg-transparent border p-0">
+                                <img class="img-fluid product-img-custom" src="images/1.jpg" alt="">
+                            </div>
+                            <div class="card-body border-left border-right text-center p-0 pt-4 pb-3">
+                                <h6 class="text-truncate mb-3">Kaos Dimas Majantara</h6>
+                                <div class="d-flex justify-content-center">
+                                    <h6>Rp.70.000</h6>
+                                    <h6 class="text-muted ml-2"><del>Rp.90.000</del></h6>
                                 </div>
                             </div>
-                            <div class="col-md-6">
-                                <h4 class="mb-4">Tinggalkan ulasan</h4>
-                                <small>Alamat email Anda tidak akan dipublikasikan. Kolom yang wajib diisi ditandai *</small>
-                                <div class="d-flex my-3">
-                                    <p class="mb-0 mr-2">Penilaian Anda * :</p>
-                                    <div class="text-primary">
-                                        <i class="bi bi-star"></i>
-                                        <i class="bi bi-star"></i>
-                                        <i class="bi bi-star"></i>
-                                        <i class="bi bi-star"></i>
-                                        <i class="bi bi-star"></i>
-                                    </div>
-                                </div>
-                                <form>
-                                    <div class="form-group">
-                                        <label for="message">Ulasan Anda *</label>
-                                        <textarea id="message" cols="30" rows="5" class="form-control"></textarea>
-                                    </div>
-                                    <div class="form-group">
-                                        <label for="name">Nama Anda *</label>
-                                        <input type="text" class="form-control" id="name">
-                                    </div>
-                                    <div class="form-group">
-                                        <label for="email">Email Anda *</label>
-                                        <input type="email" class="form-control" id="email">
-                                    </div>
-                                    <div class="form-group mb-0">
-                                        <input type="submit" value="Tinggalkan Ulasan Anda" class="btn btn-primary px-3">
-                                    </div>
-                                </form>
+                            <div class="card-footer d-flex justify-content-between bg-light border">
+                                <a href="" class="btn btn-sm text-dark p-0"><i class="bi bi-eye text-dark mr-1"></i>View Detail</a>
+                                <a href="" class="btn btn-sm text-dark p-0"><i class="bi bi-cart text-dark mr-1"></i>Add To Cart</a>
                             </div>
                         </div>
                     </div>
+                    <!-- Example product item end -->
+
+                    <!-- Additional product items start -->
+                    <div class="col-lg-4 col-md-6 col-sm-12 pb-1">
+                        <div class="card product-item border-0 mb-4">
+                            <div class="card-header product-img position-relative overflow-hidden bg-transparent border p-0">
+                                <img class="img-fluid product-img-custom" src="images/2.jpg" alt="">
+                            </div>
+                            <div class="card-body border-left border-right text-center p-0 pt-4 pb-3">
+                                <h6 class="text-truncate mb-3">Kaos Dimas Majantara</h6>
+                                <div class="d-flex justify-content-center">
+                                    <h6>Rp.70.000</h6>
+                                    <h6 class="text-muted ml-2"><del>Rp.90.000</del></h6>
+                                </div>
+                            </div>
+                            <div class="card-footer d-flex justify-content-between bg-light border">
+                                <a href="" class="btn btn-sm text-dark p-0"><i class="bi bi-eye text-dark mr-1"></i>View Detail</a>
+                                <a href="" class="btn btn-sm text-dark p-0"><i class="bi bi-cart text-dark mr-1"></i>Add To Cart</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-4 col-md-6 col-sm-12 pb-1">
+                        <div class="card product-item border-0 mb-4">
+                            <div class="card-header product-img position-relative overflow-hidden bg-transparent border p-0">
+                                <img class="img-fluid product-img-custom" src="images/3.jpg" alt="">
+                            </div>
+                            <div class="card-body border-left border-right text-center p-0 pt-4 pb-3">
+                                <h6 class="text-truncate mb-3">Kaos Dan Bonus Topi</h6>
+                                <div class="d-flex justify-content-center">
+                                    <h6>Rp.80.000</h6>
+                                    <h6 class="text-muted ml-2"><del>Rp.100.000</del></h6>
+                                </div>
+                            </div>
+                            <div class="card-footer d-flex justify-content-between bg-light border">
+                                <a href="" class="btn btn-sm text-dark p-0"><i class="bi bi-eye text-primary mr-1"></i>View Detail</a>
+                                <a href="" class="btn btn-sm text-dark p-0"><i class="bi bi-cart text-primary mr-1"></i>Add To Cart</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-4 col-md-6 col-sm-12 pb-1">
+                        <div class="card product-item border-0 mb-4">
+                            <div class="card-header product-img position-relative overflow-hidden bg-transparent border p-0">
+                                <img class="img-fluid product-img-custom" src="images/4.jpg" alt="">
+                            </div>
+                            <div class="card-body border-left border-right text-center p-0 pt-4 pb-3">
+                                <h6 class="text-truncate mb-3">Colorful Stylish Shirt</h6>
+                                <div class="d-flex justify-content-center">
+                                    <h6>$123.00</h6>
+                                    <h6 class="text-muted ml-2"><del>$123.00</del></h6>
+                                </div>
+                            </div>
+                            <div class="card-footer d-flex justify-content-between bg-light border">
+                                <a href="" class="btn btn-sm text-dark p-0"><i class="bi bi-eye text-primary mr-1"></i>View Detail</a>
+                                <a href="" class="btn btn-sm text-dark p-0"><i class="bi bi-cart text-primary mr-1"></i>Add To Cart</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-4 col-md-6 col-sm-12 pb-1">
+                        <div class="card product-item border-0 mb-4">
+                            <div class="card-header product-img position-relative overflow-hidden bg-transparent border p-0">
+                                <img class="img-fluid product-img-custom" src="images/8.png" alt="">
+                            </div>
+                            <div class="card-body border-left border-right text-center p-0 pt-4 pb-3">
+                                <h6 class="text-truncate mb-3">Colorful Stylish Shirt</h6>
+                                <div class="d-flex justify-content-center">
+                                    <h6>$123.00</h6>
+                                    <h6 class="text-muted ml-2"><del>$123.00</del></h6>
+                                </div>
+                            </div>
+                            <div class="card-footer d-flex justify-content-between bg-light border">
+                                <a href="" class="btn btn-sm text-dark p-0"><i class="bi bi-eye text-primary mr-1"></i>View Detail</a>
+                                <a href="" class="btn btn-sm text-dark p-0"><i class="bi bi-cart text-primary mr-1"></i>Add To Cart</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-4 col-md-6 col-sm-12 pb-1">
+                        <div class="card product-item border-0 mb-4">
+                            <div class="card-header product-img position-relative overflow-hidden bg-transparent border p-0">
+                                <img class="img-fluid product-img-custom" src="images/7.jpg" alt="">
+                            </div>
+                            <div class="card-body border-left border-right text-center p-0 pt-4 pb-3">
+                                <h6 class="text-truncate mb-3">Colorful Stylish Shirt</h6>
+                                <div class="d-flex justify-content-center">
+                                    <h6>$123.00</h6>
+                                    <h6 class="text-muted ml-2"><del>$123.00</del></h6>
+                                </div>
+                            </div>
+                            <div class="card-footer d-flex justify-content-between bg-light border">
+                                <a href="" class="btn btn-sm text-dark p-0"><i class="bi bi-eye text-primary mr-1"></i>View Detail</a>
+                                <a href="" class="btn btn-sm text-dark p-0"><i class="bi bi-cart text-primary mr-1"></i>Add To Cart</a>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Additional product items end -->
+
+                    <div class="col-12 pb-1">
+                        <nav aria-label="Page navigation">
+                            <ul class="pagination justify-content-end mb-3">
+                                <li class="page-item disabled">
+                                    <a class="page-link" href="#" aria-label="Previous">
+                                        <span aria-hidden="true">&laquo;</span>
+                                    </a>
+                                </li>
+                                <li class="page-item active"><a class="page-link" href="#">1</a></li>
+                                <li class="page-item"><a class="page-link" href="#">2</a></li>
+                                <li class="page-item"><a class="page-link" href="#">3</a></li>
+                                <li class="page-item">
+                                    <a class="page-link" href="#" aria-label="Next">
+                                        <span aria-hidden="true">&raquo;</span>
+                                    </a>
+                                </li>
+                            </ul>
+                        </nav>
+                    </div>
+                    
                 </div>
             </div>
+            <!-- Shop Product End -->
         </div>
     </div>
-    <!-- Detail Toko Selesai -->
-
-
-
+    <!-- Shop End -->
 
 
 
@@ -376,26 +447,5 @@
 
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
-
-<script>
-    document.addEventListener('DOMContentLoaded', function () {
-        document.querySelector('.btn-plus').addEventListener('click', function () {
-            let quantityInput = document.getElementById('quantity-input');
-            let currentValue = parseInt(quantityInput.value);
-            if (!isNaN(currentValue)) {
-                quantityInput.value = currentValue + 1;
-            }
-        });
-
-        document.querySelector('.btn-minus').addEventListener('click', function () {
-            let quantityInput = document.getElementById('quantity-input');
-            let currentValue = parseInt(quantityInput.value);
-            if (!isNaN(currentValue) && currentValue > 1) {
-                quantityInput.value = currentValue - 1;
-            }
-        });
-    });
-</script>
-
-</body>
+  </body>
 </html>
